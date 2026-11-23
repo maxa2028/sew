@@ -21,6 +21,7 @@ let spawned = 0;
 let deleted = 0;
 
 function spawnShirt() {
+    
     let shirt = document.createElement("img");
 
     let randomImage = images[Math.floor(Math.random() * images.length)];
@@ -28,7 +29,7 @@ function spawnShirt() {
 
     shirt.style.position = "fixed";
     shirt.style.left = "-10px";
-    shirt.style.top = (550 + Math.random() * (window.innerHeight - 650)) + "px";
+    shirt.style.top = (340 + Math.random() * (window.innerHeight - 400)) + "px";
     shirt.style.width = "4vw";
     shirt.style.height = "4vw";
     shirt.style.objectFit = "contain";
@@ -50,10 +51,12 @@ function animate(time) {
 
     let delta = time - lastSpawn;
     let amount = Math.floor(delta * ShirtsPerSecond / 1000);
-
-    for (let i = 0; i < amount; i++) {
-        spawnShirt();
+    if(window.innerHeight > 400) {
+        for (let i = 0; i < amount; i++) {
+            spawnShirt();
+        }
     }
+    
 
     lastSpawn += amount * 1000 / ShirtsPerSecond;
 
