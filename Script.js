@@ -51,7 +51,7 @@ function animate(time) {
 
     let delta = time - lastSpawn;
     let amount = Math.floor(delta * ShirtsPerSecond / 1000);
-    if(window.innerHeight > 400) {
+    if(window.innerHeight > 400 && window.innerWidth > 700) {
         for (let i = 0; i < amount; i++) {
             spawnShirt();
         }

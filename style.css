@@ -276,3 +276,91 @@ p{
     left: 4%; 
     z-index: 10;
 }
+
+
+@media (max-width: 700px) {
+
+    /* Navigation */
+    .head {
+        height: 55px;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-link {
+        padding: 0 7px;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    /* Main information boxes */
+    .text1,
+    .text2,
+    .text3 {
+        position: relative;
+        width: auto;
+        height: auto;
+        margin: 15px;
+        margin-top: 15px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .text1 {
+        margin-top: 75px;
+    }
+
+    /* Headings */
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        position: relative;
+        font-size: 1.3rem;
+        line-height: 24px;
+        margin: 30px 15px;
+        width: auto;
+    }
+
+    /* Paragraphs */
+    p,
+    .smalltext {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* Images */
+    .donateimg,
+    .aboutusimgs,
+    .cafeimg,
+    .cafeimg1,
+    .cafeimg2,
+    .cafeimg3 {
+        position: relative;
+        display: block;
+        width: 65vw;
+        height: 65vw;
+        margin: 25px auto;
+        right: auto;
+        bottom: auto;
+        top: auto;
+        rotate: 0deg;
+    }
+
+    /* Other text containers */
+    .aboutustext,
+    .cafetext,
+    .donatetext {
+        width: auto;
+        margin: 75px 15px 15px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+}
