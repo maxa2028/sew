@@ -326,6 +326,7 @@ p{
         line-height: 24px;
         margin: 30px 15px;
         width: auto;
+        opacity: 0;
     }
 
     /* Paragraphs */
@@ -343,7 +344,7 @@ p{
     .cafeimg2,
     .cafeimg3 {
         position: relative;
-        display: block;
+        display: none;
         width: 65vw;
         height: 65vw;
         margin: 25px auto;
@@ -351,6 +352,7 @@ p{
         bottom: auto;
         top: auto;
         rotate: 0deg;
+        
     }
 
     /* Other text containers */
