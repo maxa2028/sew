@@ -64,7 +64,7 @@ function animate(time) {
 
         let shirt = shirts[i];
 
-        shirt.x += 400 * delta / 1000;
+        shirt.x += 100 * delta / 1000;
         shirt.element.style.left = shirt.x + "px";
 
         if (shirt.x > window.innerWidth) {
