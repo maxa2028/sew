@@ -12,7 +12,7 @@ let images = [
     "image.png"
 ];
 
-let ShirtsPerSecond = 200;
+let ShirtsPerSecond = 100;
 let shirts = [];
 
 let lastSpawn = null;
